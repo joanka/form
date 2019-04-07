@@ -1,0 +1,227 @@
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Saira', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1, h2, h3, p, dd, figure, blockquote {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  background-image: url("images/2019_03_pb_glowna-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+  position: relative;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper__img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper__img {
+    position: static;
+  }
+}
+
+.form-section {
+  max-width: 450px;
+}
+
+.section-heading {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(110, 111, 113, 0.7);
+}
+
+.section-heading__img {
+  width: 100%;
+}
+
+.login-form {
+  background-color: rgba(110, 111, 113, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 1.8rem;
+}
+
+.login-form__input, .login-form__button {
+  line-height: 2.6rem;
+}
+
+.login-form__input {
+  margin-top: 1.3rem;
+  width: 80%;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #707070;
+  font-family: 'Saira', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+}
+
+.login-form__button {
+  margin-top: 1.3rem;
+  margin-bottom: 2.2rem;
+  padding: 0.5rem 5.5rem;
+  background-color: #fff;
+  border: 1px solid #707070;
+}
+
+@media (max-width: 460px) {
+  .login-form__button {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .login-form__button {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .login-form__button {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.login-form__button:hover {
+  cursor: pointer;
+  color: #515151;
+}
+
+.login-form__button--submit {
+  background-color: #f89f44;
+}
+
+.login-form__button--submit:hover, .login-form__button--submit:focus {
+  background-color: #f68109;
+}
+
+.row,
+.form__links {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__links {
+  padding-bottom: 1rem;
+}
+
+.form__links:hover {
+  font-weight: 400;
+}
+
+.login-form__button,
+input::-webkit-input-placeholder {
+  color: #707070;
+  font-family: 'Saira', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.login-form__button,
+input:-ms-input-placeholder {
+  color: #707070;
+  font-family: 'Saira', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.login-form__button,
+input::-ms-input-placeholder {
+  color: #707070;
+  font-family: 'Saira', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.login-form__button,
+input::placeholder {
+  color: #707070;
+  font-family: 'Saira', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
