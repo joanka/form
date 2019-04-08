@@ -119,12 +119,15 @@ button {
 
 .login-form__input, .login-form__button {
   line-height: 2.6rem;
+   -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .login-form__input {
   margin-top: 1.3rem;
   width: 80%;
-  border-radius: 2px;
   background-color: #fff;
   border: 1px solid #707070;
   font-family: 'Saira', sans-serif;
